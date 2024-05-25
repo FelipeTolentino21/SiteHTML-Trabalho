@@ -1,0 +1,70 @@
+*{              /* Setando a margem e o preenchimento como zero para todo o documento */
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;   /* Utilizado para não calcular a dimensão usando altura e largura */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Aplica a fonte Verdana a todo o documento */
+    font-size: small;
+}
+
+html, body{     /* Estilo aplicado à tag html e ao body todo */
+    height: 100%;             /* Altura de 100% do site */
+    overflow-y: hidden;       /* Esconde a barra de rolagem vertical */
+    overflow-x: hidden;       /* Esconde a barra de rolagem horizontal */
+}
+
+header{         /* Estilo aplicado no header todo */
+    height: 120px;            /* Setado a altura do cabeçalho em 120 pixeis */
+    padding: 20px 0;          /* Preenchimento superior e infeior 20 e da esquerda e direita 0% para não "grudar" no topo */
+    background-color: #FFA62F; /* Cor colocada em todo o cabeçalho */
+}
+
+body{           /* Estilo apliacdo no body todo */
+    background-color: #FFE8C8; /* cor colocada em todo o corpo */
+}
+
+.center{        /* Estilo da div center */
+    display: flex;            /* Utilizado para criar um contêiner flexível */
+    flex-wrap: wrap;          /* Utilizado em conjunto com o de cima para fazer os itens serem organizados em linhas */
+    max-width: 1100px;        /* Comprimento máximo de 1100 pixeis */
+    margin: 0 auto;           /* Coloca a margem superior e infeiror como 0 e esquerda e direita automaticamente */
+    padding: 0 2%;            /* Preenchimento superior e infeior 0 e da esquerda e direita 2% para não "grudar" nos lados */
+}
+
+.logo{          /* Estilo da div logo */
+    width: 30%;               /* Coloca um comprimento de 40% entre a logo e os elementos do menu (divide o espaço com o menu) */
+    font-weight: bold;        /* Negrito no texto */
+}
+
+.menu{          /* Estilo aplicado no menu */
+    padding-top: 30px;       /* Coloca um preenchimento de 30 pixeis no menu para igualar a altura da logo */
+    width: 70%;               /* Coloca um comprimento de 60% entre os elementos do meu e a logo (divide o espaço com a logo) */
+    text-align: right;        /* Alinha o texto à direita */
+}
+
+.menu a{        /* Estilo aplicado aos links do menu */
+    color: black;           /* Cor do texto */    
+    text-decoration: none;    /* Remove as propriedades de link do texto */
+    font-weight: bold;        /* Negrito no texto */
+    margin-right: 15px;       /* Margem entre os textos de 15 pixeis pra direita */
+}
+
+.meio{
+    display: flex;
+}
+
+.textoMeio{
+    flex: 1;
+    padding: 20px;
+    background-color: #FFC96F;
+}
+
+.imagem{
+    flex: 1;
+    padding: 20px;
+    background-color: #FFC96F;
+}
+
+.rodape{
+    background-color: #FFA62F;
+    padding: 100% 0;
+}
